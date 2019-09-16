@@ -1,27 +1,3 @@
-// Notes
-// Primary Objectives
-// √ Take a person age on Earth
-// √ Find out how to collect age for functions
-// √ Apply age to multiple functions to find out various outcomes
-// √ Return age from Mercury @ 24/100 Earth years (fastest journey around sun)
-// √ Return age from Venus @ 62/100 Earth years
-// √ Return age from Mars @ 188/100 Earth years
-// √ Return age from Jupiter @ 1186/100 Earth years (slowest journey around sun)
-// √ For each planet return life left on planet with 'const lifeExpectancy = 100;' result must be either surplus or deficit, not 0.
-// Secondary Obectives
-// Apply orogress to additional objectives mentioned in
-// https://epicenter.epicodus.com/courses/449/code_reviews/1861
-// import { } from './../src/ .js';
-//
-// describe ('birthday', function ()
-//
-//   it ('should create an instance of a date object with var birthday', function(){
-//     let test = new Date('11, 12, 2001');
-//     expect(test.getMonth()).toEqual(11);
-//   });
-//   it ('should ')
-// })
-
 import { Being } from './galactic-calculator-ver-2.js';
 
 describe('Being', function (){
@@ -30,10 +6,73 @@ describe('Being', function (){
   const dob = new Being (new birthday(1985, 11, 29));
   expect(typeof birthday).toEqual(typeof new Being);
 });
-it ('should calculate age in years from a date', function ()
+it ('should return age in years from age on Earth', function ()
 {
   const dob = new Being (new birthday(1985, 11, 29));
-  const age = dob.getYear();
-  expect(age).toEqual(35);
-})
+  let ageOnEarth = dob.getYear();
+  expect(age).toEqual(33);
+});
+
+it ('should calculate years to death on Earth', function()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let earthYearsLeft = dob.earthYearsLeft();
+  expect(earthYearsLeft).toEqual(67);
+});
+
+it ('should return age in years from age on Mercury', function ()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let ageOnMercury = dob.getYear();
+  expect(ageOnMercury).toEqual(137);
+});
+
+it ('should calculate tyears to death on Mercury', function()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let mercuryYearsLeft = dob.mercuryYearsLeft();
+  expect(mercuryYearsLeft).toEqual(279);
+});
+
+it ('should return age in years from age on Venus', function ()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let ageOnVenus = dob.getYear();
+  expect(ageOnVenus).toEqual(53.22);
+});
+
+it ('should calculate years to death on Venus', function()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let venusYearsLeft = dob.venusYearsLeft();
+  expect(venusYearsLeft).toEqual(108.07);
+});
+
+it ('should return age in years from age on Mars', function ()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let ageOnMars = dob.getYear();
+  expect(ageOnMars).toEqual(17.55);
+});
+
+it ('should calculate years to death on Mars', function()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let marsYearsLeft = dob.marsYearsLeft();
+  expect(marsYearsLeft).toEqual(35.64);
+});
+
+it ('should return age in years from age on Jupiter', function ()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let ageOnJupiter = dob.getYear();
+  expect(ageOnJupiter).toEqual(2.78);
+});
+
+it ('should calculate years to death on Jupiter', function()
+{
+  const dob = new Being (new birthday(1985, 11, 29));
+  let jupiterYearsLeft = dob.jupiterYearsLeft();
+  expect(jupiterYearsLeft).toEqual(5.65);
+});
 })
