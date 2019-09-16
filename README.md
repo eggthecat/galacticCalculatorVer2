@@ -13,7 +13,10 @@
 |Information collection| Enter age into input| Age is reflected|
 |Submit information| Press Submit button| Results for various planets are revealed|
 
+
 ## Bugs
+
+* input function activated by submit button does not work
 
 * MVP not achieved
 
