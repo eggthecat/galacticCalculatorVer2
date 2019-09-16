@@ -10,5 +10,6 @@ $(document).ready(function() {
     let birthday = $('#birthday').val().toString();
     console.log(age);
     let solution = new universal(birthday);
+    console.log(solution);
   });
 });
