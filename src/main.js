@@ -1,4 +1,4 @@
-// import { pingPong } from './galactic-calculator-ver-2';
+// import { Being } from './galactic-calculator-ver-2.js';
 import $ from 'jquery';
 // import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,9 +7,5 @@ import $ from 'jquery';
 $(document).ready(function() {
   $('#user-age-form').submit(function(event) {
     event.preventDefault();
-    let birthday = $('#birthday').val().toString();
-    console.log(age);
-    let solution = new universal(birthday);
-    console.log(solution);
   });
 });
