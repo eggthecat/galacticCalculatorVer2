@@ -1,4 +1,4 @@
-// import { Being } from './galactic-calculator-ver-2.js';
+import { Being } from './galactic-calculator-ver-2.js';
 import $ from 'jquery';
 // import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
