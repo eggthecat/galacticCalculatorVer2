@@ -58,8 +58,8 @@ it ('should calculate years to death on Venus', function(){
   let currentYear = currentDate.getUTCFullYear();
   let age = currentYear - (dob.getFullYear());
   let yearsLeft = 100 - age ();
-  let VenusYearsLeft = yearsLeft/0.62;
-  expect(VenusYearsLeft).toEqual(279);
+  let venusYearsLeft = yearsLeft/0.62;
+  expect(venusYearsLeft).toEqual(279);
 });
 
 it ('should return age in years from age on Mars', function (){
@@ -67,7 +67,7 @@ it ('should return age in years from age on Mars', function (){
   let currentDate = new Date();
   let currentYear = currentDate.getUTCFullYear();
   let age = currentYear - (dob.getFullYear());
-  let ageOnMars = age/1.88;
+  let ageonMars = age/1.88;
   expect(ageOnMars).toEqual(17.5);
 });
 
@@ -77,8 +77,8 @@ it ('should calculate years to death on Mars', function(){
   let currentYear = currentDate.getUTCFullYear();
   let age = currentYear - (dob.getFullYear());
   let yearsLeft = 100 - age ();
-  let MarsYearsLeft = yearsLeft/1.88;
-  expect(MarsYearsLeft).toEqual(35.6);
+  let marsYearsLeft = yearsLeft/1.88;
+  expect(marsYearsLeft).toEqual(35.6);
 });
 
 it ('should return age in years from age on Jupiter', function (){
@@ -96,6 +96,6 @@ it ('should calculate years to death on Jupiter', function(){
   let currentYear = currentDate.getUTCFullYear();
   let age = currentYear - (dob.getFullYear());
   let yearsLeft = 100 - age ();
-  let JupiterYearsLeft = yearsLeft/11.86;
-  expect(JupiterYearsLeft).toEqual(5.6);
+  let jupiterYearsLeft = yearsLeft/11.86;
+  expect(jupiterYearsLeft).toEqual(5.6);
 });
