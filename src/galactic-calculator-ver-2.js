@@ -1,10 +1,10 @@
 
-// class Being {
+class Being {
   constructor (birthday) {
-    this.birthday = birthday;
+    this.birthday =  new Date (birthday);
   }
 
-  get earthlingAge() {
+  earthlingAge() {
     return this.ageOnEarth();
   }
 
@@ -19,7 +19,7 @@
     return  100 - this.earthlingAge;
   }
 
-  get mercurianAge() {
+  mercurianAge() {
     return this.ageOnMercury();
   }
 
@@ -32,7 +32,7 @@
     return 100 / 0.24 - this.mercurianAge;
   }
 
-  get venusianAge() {
+  venusianAge() {
     return this.ageOnVenus();
   }
 
@@ -45,7 +45,7 @@
     return 100 / 0.62 - this.venusianAge;
   }
 
-  get martianAge() {
+  martianAge() {
     return this.ageOnMars();
   }
 
@@ -58,7 +58,7 @@
     return 100 / 1.88 - this.martianAge;
   }
 
-  get jupiterianAge(){
+  jupiterianAge(){
     return this.ageOnJupiter();
   }
 
